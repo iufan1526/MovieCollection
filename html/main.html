@@ -8,16 +8,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="../modules/moveList.js"></script>
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 
 <body>
     <!-- NavBar -->
     <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">제목입니다.</a>
+            <a class="navbar-brand" href="#">무비리스트</a>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button type="button" class="btn btn-outline-light">Light</button>
+                    <input class="form-control me-2" type="search" placeholder="영화제목을 입력하세요." aria-label="Search">
+                    <button type="button" class="btn btn-outline-light">search</button>
                 </form>
             </div>
         </div>
@@ -25,7 +26,7 @@
     <!-- NavBar End -->
 
     <!-- todayMovieContent -->
-    <h1>오늘의 영화</h1>
+    <h1 class="title">오늘의 영화</h1>
     <div style="display: flex; justify-content: center;">
         <div id="carouselExampleIndicators" class="carousel slide" style="width: 30%;">
             <div class="carousel-indicators">
@@ -66,7 +67,7 @@
 
     <!-- movieListContent -->
     <div style="overflow-y: scroll; height: 300px;">
-        <h1>영화 리스트</h1>
+        <h1>MOVIE LIST</h1>
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
                 <div class="card">
@@ -129,37 +130,26 @@
             </div>
 
             <div class="col mb-3">
-                <h5>Section</h5>
+                <h5>Team mate</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">김승태</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">한범석</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">민찬기</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">이동하</a></li>
+
                 </ul>
             </div>
 
             <div class="col mb-3">
-                <h5>Section</h5>
+                <h5>Vlog</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-                </ul>
+                    <li class="nav-item mb-2"><a href="https://github.com/iufan1526" class="nav-link p-0 text-body-secondary">https://github.com/iufan1526</a></li>
+                    <li class="nav-item mb-2"><a href="https://lemonlog.tistory.com" class="nav-link p-0 text-body-secondary">https://lemonlog.tistory.com/</a></li>
+                    <li class="nav-item mb-2"><a href="https://velog.io/@snoop930419" class="nav-link p-0 text-body-secondary">https://velog.io/@snoop930419</a></li>
+                    <li class="nav-item mb-2"><a href="https://electronicreviwblog.tistory.com/" class="nav-link p-0 text-body-secondary">https://electronicreviwblog.tistory.com/</a></li>
+ 
             </div>
 
-            <div class="col mb-3">
-                <h5>Section</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-                </ul>
-            </div>
         </footer>
     </div>
     <!-- Footer End -->
