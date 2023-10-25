@@ -12,7 +12,7 @@ const options = {
  * 오늘의 영화 API 호출
  * @return array => todayMovies.results
  */
-export const getTodayMovies = async () => {
+const getTodayMovies = async () => {
   const response = await fetch(
     "https://api.themoviedb.org/3/trending/movie/day?language=ko-KR",
     options
@@ -28,7 +28,7 @@ export const getTodayMovies = async () => {
  * @param
  * @return array => allMovies.results
  */
-export const getAllMovies = async () => {
+const getAllMovies = async () => {
   const response = await fetch(
     "https://api.themoviedb.org/3/movie/now_playing?language=ko-KR&page=1",
     options
@@ -44,7 +44,7 @@ export const getAllMovies = async () => {
  * @param number => id
  * @return array => movieDetail.results
  */
-export const getMovieDetail = async (id) => {
+const getMovieDetail = async (id) => {
   const response = await fetch(
     `https://api.themoviedb.org/3/movie/${id}?language=ko-KR`,
     options
