@@ -9,6 +9,9 @@ class Review {
   }
 }
 
+const urlParam = new URLSearchParams(location.search);
+const paramMovieId = urlParam.get("movieId"); // 찾고자 하는 영화 id를 지정
+
 /**
  * 영화 리뷰 가져오기
  * @param {Number} movieId
@@ -56,7 +59,7 @@ const getReviews = (movieId) => {
  */
 const saveReview = () => {
   const newReview = new Review(
-    299054,
+    paramMovieId,
     document.querySelector("#newName").value,
     document.querySelector("#newPassword").value,
     document.querySelector("#newReview").value
@@ -113,6 +116,6 @@ const deleteReview = (uuid) => {
   alert("삭제가 완료 되었습니다.");
 };
 
-getReviews(299054);
+getReviews(paramMovieId);
 
 //deleteReview();

@@ -4,7 +4,8 @@
 //import { getMovieDetail } from "./data.js";
 
 const resultArr = [];
-const movieIdToFind = 939335; // 찾고자 하는 영화 id를 지정
+const urlSearch = new URLSearchParams(location.search);
+const movieIdToFind = urlSearch.get("movieId"); // 찾고자 하는 영화 id를 지정
 
 // 오늘의 영화
 const getMovies = async () => {
@@ -57,8 +58,7 @@ const getAllMovieList = async () => {
 
 // resultArr 배열의 객체 중에서 특정 id를 가진 객체를 검색하여 반환
 function findMovieById(id) {
-  const foundMovie = resultArr.find((movie) => movie.id === id);
-
+  const foundMovie = resultArr.find((movie) => movie.id === Number(id));
   return foundMovie;
 }
 
