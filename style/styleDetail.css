@@ -31,3 +31,7 @@
 .detailDescription {
     margin-left: 10px; /* 이미지와 상세 정보 간격을 조절, 원하는 간격으로 설정 */
 }
+
+#overview{
+    width : 1000px;
+}

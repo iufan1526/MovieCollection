@@ -1,9 +1,10 @@
 // 상세화면
-import { getTodayMovies } from "./data.js";
-import { getAllMovies } from "./data.js";
+//import { getTodayMovies } from "./data.js";
+//import { getAllMovies } from "./data.js";
 //import { getMovieDetail } from "./data.js";
 
 const resultArr = [];
+const movieIdToFind = 939335; // 찾고자 하는 영화 id를 지정
 
 // 오늘의 영화
 const getMovies = async () => {
@@ -62,7 +63,7 @@ const getAllMovieList = async () => {
 function findMovieById(id) {
     const foundMovie = resultArr.find(movie => movie.id === id);
   
-    return foundMovie; // 또는 그냥 반환 대신 출력하려면 console.log(foundMovie);
+    return foundMovie; 
 };
 
 // Promise를 사용하여 모든 작업이 완료된 후 결과를 출력
@@ -71,8 +72,6 @@ async function process() {
     await getAllMovieList();
     console.log(resultArr);
 
-    
-
     const detImage = document.getElementById('detImage');
     const title = document.getElementById('title');
     const overview = document.getElementById('overview');
@@ -80,7 +79,7 @@ async function process() {
     const vote_average = document.getElementById('vote_average');
     
 
-    const movieIdToFind = 299054; // 찾고자 하는 영화 id를 지정
+    
 
     const foundMovie = findMovieById(movieIdToFind);
 
