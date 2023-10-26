@@ -29,16 +29,5 @@
 }
 
 .detailDescription {
-  margin-left: 10px; /* 이미지와 상세 정보 간격을 조절, 원하는 간격으로 설정 */
-}
-
-.reviewDiv {
-  margin: 30px auto 30px auto;
-  width: 1300px;
-
-  border: 1px solid #000; /* 테두리를 1px 굵기의 검은색으로 추가 */
-  border-radius: 10px; /* 모서리를 10px만큼 둥글게 만듭니다 */
-  padding: 10px; /* 테두리와 내용 사이의 간격을 조절 */
-
-  box-shadow: 2px 3px 5px 0px;
+    margin-left: 10px; /* 이미지와 상세 정보 간격을 조절, 원하는 간격으로 설정 */
 }

@@ -52,5 +52,5 @@ const getMovieDetail = async (id) => {
 
   const movieDetail = await response.json();
 
-  return movieDetail.results;
+  return movieDetail;
 };
