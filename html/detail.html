@@ -44,7 +44,7 @@
               <label for="inputPassword6" class="col-form-label">사용자</label>
             </div>
             <div class="col-auto">
-              <input type="text" id="userName" class="form-control" aria-describedby="passwordHelpInline">
+              <input type="text" id="newName" class="form-control" aria-describedby="passwordHelpInline">
             </div>
             <div class="col-auto">
                 <label for="inputPassword6" class="col-form-label">비밀번호</label>
@@ -54,31 +54,12 @@
               </div>
           </div>
         <div class="mb-3" style="margin-top: 20px;">
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <textarea class="form-control" id="newReview" rows="3"></textarea>
           </div>
-          <button type="button" class="btn btn-dark" id="saveBtn" onclick="getReviews()">등록</button>
+          <button type="button" class="btn btn-dark" id="saveBtn" onclick="saveReview()">등록</button>
     </div>
 
-    <div class ="reviewDiv">
-        <div class="row g-3 align-items-center">
-            <div class="col-auto">
-              <label for="inputPassword6" class="col-form-label">사용자</label>
-            </div>
-            <div class="col-auto">
-              홍길동
-            </div>
-            <div class="col-auto">
-                <label for="inputPassword6" class="col-form-label">비밀번호</label>
-              </div>
-              <div class="col-auto">
-                <input type="password" id="oldPassword" class="form-control" aria-describedby="passwordHelpInline">
-              </div>
-          </div>
-        <div class="mb-3" style="margin-top: 20px;">
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-          <button type="button" class="btn btn-dark">수정</button>
-          <button type="button" class="btn btn-dark">삭제</button>
+    <div class ="userReviewDiv">
     </div>
     <!-- review End-->
 
