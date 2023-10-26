@@ -92,6 +92,19 @@ const updateReview = (uuid) => {
  * 영화 리뷰 삭제
  */
 const deleteReview = (uuid) => {
+  const movieObject = JSON.parse(window.localStorage.getItem(uuid));
+  const inputPassword = document.querySelector(`#oldPassword-${uuid}`).value;
+
+  if (inputPassword === "" || inputPassword === undefined) {
+    alert("비밀번호를 입력해주세요.");
+    return;
+  }
+
+  if (movieObject.password !== inputPassword) {
+    alert("비밀번호가 일치하지 않습니다.");
+    return;
+  }
+
   if (!confirm("정말로 삭제하시겠습니까??")) return;
 
   localStorage.removeItem(uuid);
