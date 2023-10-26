@@ -18,6 +18,7 @@
     vertical-align: middle; /* 수직 가운데 정렬 */
     margin: 0; /* margin을 0으로 설정하여 공백 제거 */
     padding: 0; /* padding을 0으로 설정하여 공백 제거 */
+    width : 350px;
 
     box-shadow:2px 3px 5px 0px;
 }
@@ -29,5 +30,9 @@
 }
 
 .detailDescription {
-    margin-left: 10px; /* 이미지와 상세 정보 간격을 조절, 원하는 간격으로 설정 */
+    margin-left: 30px; /* 이미지와 상세 정보 간격을 조절, 원하는 간격으로 설정 */
+}
+
+#overview{
+    width : 1000px;
 }

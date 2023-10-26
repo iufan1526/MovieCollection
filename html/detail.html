@@ -8,7 +8,7 @@
     <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script type="module" src="../modules/moveList.js"></script>
+    <script type="module" src="../modules/detail.js"></script>
     <link rel="stylesheet" href="../style/styleDetail.css">
 </head>
 
@@ -25,13 +25,13 @@
     <!-- detail  -->
         <div class ="detailDiv">
             <div class="detailImage">
-                <img src="https://image.tmdb.org/t/p/w400/1E5baAaEse26fej7uHcjOgEE2t2.jpg" class="img-fluid" alt="...">
+                <img id="detImage" class="img-fluid" alt="...">
             </div>
-            <div class="detailDescription">
-                <h2>영화 제목</h2>
-                <p>장르/개봉일</p>
-                <p>줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리</p>
-                <p>평점</p>
+            <div  class="detailDescription">
+                <h2 id="title" class="fs-1">영화 제목</h2>
+                <p id="release_date" class="fs-6">장르/개봉일</p>
+                <p id="overview" class="fs-5">줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리줄거리</p>
+                <p id="vote_average" class="fs-6">평점</p>
             </div>
         </div>
 
