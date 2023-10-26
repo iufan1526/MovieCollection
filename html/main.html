@@ -8,9 +8,9 @@
     <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script defer src="../modules/data.js"></script>
     <script defer src="../modules/moveList.js"></script>
-
-    <link rel="stylesheet" href="../">
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 
 <body>
@@ -28,7 +28,7 @@
     <!-- NavBar End -->
 
     <!-- todayMovieContent -->
-    <h1 class="title">오늘의 영화</h1>
+    <h1 class="title">TODAY`S MOVIE</h1>
     <div style="display: flex; justify-content: center;">
         <div id="carouselExampleIndicators" class="carousel slide" style="width: 30%;">
             <div class="carousel-indicators">
@@ -68,9 +68,9 @@
     <!-- todayMovieContent End -->
 
     <!-- movieListContent -->
-    <div style="overflow-y: scroll; height: 300px;" class="movieBox">
-        <h1>MOVIE LIST</h1>
-        <div class="row row-cols-1 row-cols-md-3 g-4"> </div>
+    <div style="overflow-y: scroll; height: 1400px; margin-top: 40px;">
+        <h1 style="text-align: center; font-weight:800;">MOVIE LIST</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4 movieBox"> </div>
     </div>
     <!-- movieListContent End-->
 
