@@ -1,22 +1,18 @@
 // 메인페이지 영화 리스트 및 검색기능
 
 const getMovies = async () => {
-  const result = await getAllMovies();
-
-  console.log(result);
+  let result = await getAllMovies();
 
   let cardList = document.querySelector(".movieBox");
   cardList.innerHTML = null;
 
-  let titleList = document.querySelector(".result");
-
-  const title = result.title;
+  const title = document.querySelector("#searchBox");
 
   // 검색기능. if문 활용하여 정의된 것을 필터를 통해 매칭후 맞으면 결과값 도출.
 
-  if (title !== undefined) {
+  if (title.value !== undefined && title.value !== "") {
     result = result.filter((obj) => {
-      if (obj.title.search(title) !== -1) {
+      if (obj.title.search(title.value) !== -1) {
         return true;
       }
     });
